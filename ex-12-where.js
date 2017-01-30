@@ -4,18 +4,18 @@
  // a properties object. It should return a new list containing only those
  // objects that meet the key-value conditions in the properties object.
 
-// function where(objArr,target){
-//   var targetList = [];
-//   for (i=0;i<objArr.length;i++) {
-//     var currObj = objArr[i];
-//     for (prop in currObj) {
-//       if (prop.indexOf([target]) >= 0) {
-//         targetList.push(currObj);
-//       }
-//     }
-//   }
-//   return targetList;
-// }
+function where(objArr,targetObj){
+  for (targProp in targetObj) {
+    var targetVal = targetObj[targProp];
+  }
+  var targetList = [];
+  for (i=0;i<objArr.length;i++) {
+    if (objArr[i][targProp] === targetVal) {
+      targetList.push(objArr[i]);
+    }
+  }
+  return targetList;
+}
 
 // Inspired by a solution given by Bryan Downing on stackoverflow
 
