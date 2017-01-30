@@ -53,8 +53,8 @@ var parkingTicketsCount = [33, 44, 22, 21, 92, 63, 12, 42, 56, 11, 99,
 var stats_1  = showStats(42, parkingTicketsCount)
 var stats_2 =  showStats(56, parkingTicketsCount)
 
-console.log(stats_1)
-console.log(stats_2)
+// console.log(stats_1)
+// console.log(stats_2)
 
 console.assert( stats_1.setSize === 39  );
 console.assert( stats_1.count_inputEqualTo === 6  ) ;

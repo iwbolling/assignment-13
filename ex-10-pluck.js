@@ -6,13 +6,13 @@
 // e.g:
 // pluck(stooges, 'name') should yield the array, ['moe','larry','curly']
 
-
-
-
-
-
-
-
+function pluck(objArr,target) {
+  var resultArr = [];
+  for (i=0;i<objArr.length;i++) {
+    resultArr.push(objArr[i][target]);
+  }
+  return resultArr;
+}
 
 //*~*~*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 

@@ -4,13 +4,20 @@
  // a properties object. It should return a new list containing only those
  // objects that meet the key-value conditions in the properties object.
 
+// function where(objArr,target){
+//   var targetList = [];
+//   for (i=0;i<objArr.length;i++) {
+//     var currObj = objArr[i];
+//     for (prop in currObj) {
+//       if (prop.indexOf([target]) >= 0) {
+//         targetList.push(currObj);
+//       }
+//     }
+//   }
+//   return targetList;
+// }
 
-
-
-
-
-
-
+// Inspired by a solution given by Bryan Downing on stackoverflow
 
 //*~*~*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 
