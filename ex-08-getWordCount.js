@@ -10,7 +10,7 @@ function getWordCount(str){
   var wordObj = {};
   var currWord = "";
   for (i=0;i<str.length;i++) {
-    if (str[i] === "!" || str[i] === "." || str[i] === ",") {
+    if (str[i] === "!" || str[i] === "." || str[i] === "," || str[i] === "?") {
       newStr = newStr;
     } else {
       newStr = newStr + str[i].toLowerCase();
@@ -45,6 +45,6 @@ console.assert( wordFrequencyObject.you === 9 )
 
 // EXPLORER MODE - PART 2
 //-----------------------------
-// console.assert( wordFrequencyObject.needy === 4)
-// console.assert( wordFrequencyObject.caw === 6)
-// console.assert( wordFrequencyObject.dead === 2)
+console.assert( wordFrequencyObject.needy === 4)
+console.assert( wordFrequencyObject.caw === 6)
+console.assert( wordFrequencyObject.dead === 2)
